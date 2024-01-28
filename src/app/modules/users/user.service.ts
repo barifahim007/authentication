@@ -1,14 +1,15 @@
 import { IUser } from './user.interface'
 import { User } from './user.model'
-
 // user created
 export const createUser = async (user: IUser): Promise<IUser | null> => {
   const result = await User.create(user)
+
   return result
 }
 // get single user
 export const getSingleUser = async (id: string): Promise<IUser | null> => {
   const result = await User.findById(id)
+
   return result
 }
 

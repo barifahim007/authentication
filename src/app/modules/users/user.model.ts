@@ -1,5 +1,7 @@
 import { Model, Schema, model } from 'mongoose'
 import { IUser } from './user.interface'
+import bcrypt from 'bcrypt'
+import config from '../../../config'
 
 type UserModel = Model<IUser, object>
 
@@ -48,6 +50,10 @@ export const userSchema = new Schema<IUser>({
     type: String,
     required: true
   }
+})
+
+userSchema.pre('save', async function () {
+  this.password = await bcrypt.hash(this.password, Number(config.saltRounds))
 })
 
 export const User = model<IUser, UserModel>('User', userSchema)
