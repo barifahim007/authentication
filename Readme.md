@@ -7,6 +7,8 @@
 3. Express
 4. Ts-node-dev
 5. Dot env
+6. Bcrypt password
+7. Jwt web token
 
 ### In this project what we have done.
 
@@ -34,3 +36,6 @@
 - [x] date of birth
 - [x] Created at
 - [x] Updated at
+
+                ## Always follow below this structure for send data into DB
+                    service => controller => router => app.ts => flash into DB

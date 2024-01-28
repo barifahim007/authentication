@@ -9,7 +9,6 @@ export const createUser = async (user: IUser): Promise<IUser | null> => {
 // get single user
 export const getSingleUser = async (id: string): Promise<IUser | null> => {
   const result = await User.findById(id)
-
   return result
 }
 
