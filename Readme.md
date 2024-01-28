@@ -23,12 +23,12 @@
                       #user authentication ..
 
 - [x] userId
-- [x] Name
+- [x] Name{
 - [x] 1.FirstName
 - [x] 2.middleName
-- [x] 3.lastName
+- [x] 3.lastName }
 - [x] email
-- [x] user password
+- [x] password
 - [x] contact
 - [x] gender
 - [x] date of birth
