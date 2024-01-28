@@ -1,3 +1,36 @@
-            ## custom authentication and password  bcrypt  with
+# authentication system and bcrypt password
 
--[X] TypeScript setup, -[X] Mongoose setup, -[X] Express setup, -[X] Ts-node-dev, -[X] Dot env setup, -[X] Catch async setup, -[X] EsLint setup, -[X] Prettier setuup, -[X] Logger setup, -[X] Husky setup, -[X] winston setup, -[X] Databse connect, -[X] Mongoose setup,
+<!--  professional  project setup backend -->
+
+1. TypeScript
+2. Mongoose
+3. Express
+4. Ts-node-dev
+5. Dot env
+
+### In this project what we have done.
+
+- [x] Project setup
+- [x] Logger setup
+- [x] winston setup
+- [x] Databse connect
+- [x] Mongoose setup
+
+                  ## project requirment analyssis
+
+## Requirement analysis of our project:
+
+                      #user authentication ..
+
+- [x] userId
+- [x] Name
+- [x] 1.FirstName
+- [x] 2.middleName
+- [x] 3.lastName
+- [x] email
+- [x] user password
+- [x] contact
+- [x] gender
+- [x] date of birth
+- [x] Created at
+- [x] Updated at
