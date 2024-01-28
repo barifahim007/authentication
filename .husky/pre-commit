@@ -1,1 +1,1 @@
-npm link-staged
+npm run lint:prettier
