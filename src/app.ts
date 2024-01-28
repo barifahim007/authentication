@@ -8,8 +8,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// user router
-
+// user router common roter
 app.use('/api/v1', router)
 
 app.get('/', (req, res) => {
