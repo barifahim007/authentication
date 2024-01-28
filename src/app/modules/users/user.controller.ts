@@ -29,9 +29,9 @@ export const getSingleUser = async (
   next: NextFunction
 ) => {
   try {
-    const _id = req.params.id
+    const _id = req.params.+id
 
-    const result = await userService.getSingleUser(_id)
+    const result = await userService.aagetSingleUser(_id)
 
     res.status(200).json({
       status: httpStatus.OK,
