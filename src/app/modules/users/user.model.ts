@@ -27,7 +27,8 @@ export const userSchema = new Schema<IUser>({
   },
   password: {
     type: String,
-    required: true
+    required: true,
+    select: 0
   },
   contract: {
     type: String,
@@ -55,5 +56,19 @@ export const userSchema = new Schema<IUser>({
 userSchema.pre('save', async function () {
   this.password = await bcrypt.hash(this.password, Number(config.saltRounds))
 })
+
+// userSchema.pre('save', async function (next) {
+//   if (this.isModified('password')) {
+//     this.password = await bcrypt.hash(this.password, Number(config.saltRounds))
+//   }
+//   next()
+// })
+
+// userSchema.pre('updateOne', async function (next) {
+//   if (this._update.$set && this._update.$set.password) {
+//     this._update.$set.password = await bcrypt.hash(this._update.$set.password, Number(config.saltRounds))
+//   }
+//   next()
+// })
 
 export const User = model<IUser, UserModel>('User', userSchema)
